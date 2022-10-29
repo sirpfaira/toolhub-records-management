@@ -2,7 +2,7 @@
 
 #### This is a Web Application for recording and modifying attributes of various tools which are in the Toolhub.
 
-### You can view the [live website ](https://example.com) which is hosted on Vercel.
+### You can view the [live website ](https://toolhub-records-management.vercel.app/) which is hosted on Vercel.
 
 # Introduction
 

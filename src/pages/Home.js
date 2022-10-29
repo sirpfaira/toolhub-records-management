@@ -11,37 +11,41 @@ const Home = () => {
           many tools in Toolhub have missing or incomplete information. Help us
           make the information complete.
         </p>
-        <button type='submit' class='btn btn-primary'>
+        <button type='submit' className='btn btn-primary'>
           Read Documentation!
         </button>
       </div>
-      <div className='d-flex flex-column justify-content-center container'>
-        <h4>Or get right to it....</h4>
-        <p>
-          This tool below is missing the "keywords" attribute. Can you help us
-          fill it in.
-        </p>
-        <form class='row container g-3'>
-          <div class='col-auto'>
-            <label for='inputPassword2' class='visually-hidden'>
-              Password
-            </label>
-            <input
-              type='text'
-              class='form-control'
-              id='inputPassword2'
-              placeholder='Enter keywords here...'
-            />
-          </div>
-          <div class='col-auto'>
-            <button type='submit' class='btn btn-primary mb-3'>
-              Submit
-            </button>
-          </div>
-        </form>
+      <div className='d-flex flex-column justify-content-center container align-items-center '>
+        <div>
+          <h4>Or get right to it....</h4>
+          <p>
+            This tool below is missing the "keywords" attribute. Can you help us
+            fill it in.
+          </p>
+        </div>
+        <div>
+          <form className='container d-flex gap-3'>
+            <div className='col-auto'>
+              <label htmlFor='inputPassword2' className='visually-hidden'>
+                Password
+              </label>
+              <input
+                type='text'
+                className='form-control'
+                id='inputPassword2'
+                placeholder='Enter keywords here...'
+              />
+            </div>
+            <div className='col-auto'>
+              <button type='submit' className='btn btn-primary mb-3'>
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
 
         <div className='tool-info card'>
-          <div class='card-body d-flex flex-column'>
+          <div className='card-body d-flex flex-column'>
             <span>Title: Pywikibot</span>
             <span>Developer: Pywikibot team</span>
             <span>

@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
+import Footer from './pages/Footer';
 import Home from './pages/Home';
 import Leaderboard from './pages/Leaderboard';
 import NavigationBar from './pages/NavigationBar';
@@ -15,6 +16,7 @@ function App() {
           <Route path='leaderboard' element={<Leaderboard />} />
           <Route path='records-dashboard' element={<RecordsDashboard />} />
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </div>
   );
