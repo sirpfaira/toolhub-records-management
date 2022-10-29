@@ -1,8 +1,8 @@
 import React from 'react';
-import DATA from '../assets/mockData.json';
+import { leaderboard } from '../assets/data';
 
 const Leaderboard = () => {
-  DATA.sort((a, b) =>
+  leaderboard.sort((a, b) =>
     a.contributions > b.contributions
       ? -1
       : b.contributions > a.contributions
@@ -12,7 +12,7 @@ const Leaderboard = () => {
 
   return (
     <div className='container-fluid mt-3'>
-      <h1>LeaderBoard</h1>
+      <h1>Leader Board</h1>
       <p>
         These are users that provided the most missing fields in the past 30
         days. Well done!
@@ -27,7 +27,7 @@ const Leaderboard = () => {
           </tr>
         </thead>
         <tbody>
-          {DATA.map((person, index) => (
+          {leaderboard.map((person, index) => (
             <tr>
               <th scope='row'>{index + 1}</th>
               <td>{person.name}</td>
